@@ -27,46 +27,48 @@ public class MapBuilder : MonoBehaviour
     private void Update()
     {
         if (_tilePrefab == null) return;
-        PutTaleOnMap();
+        PutTileOnMap();
     }
 
     public void StartPlacingTile(GameObject tilePrefab)
     {
+        if (_tilePrefab != null) return;
+            
         _tilePrefab = Instantiate(tilePrefab);
         SetLayerRecursivelyToChildren(_tilePrefab.transform, 2);
         TakeTileRenders();
         SaveTileBasicMaterials();
     }
     
-    private void PutTaleOnMap()
+    private void PutTileOnMap()
     {
         var mousePosition = Input.mousePosition;
         var mousePositionRay = _mainCamera.ScreenPointToRay(mousePosition);
         
-        var worldPosition = new Vector3();
-        
         if (Physics.Raycast(mousePositionRay, out var hitInfo))
         {
-            worldPosition = hitInfo.point;
+            var worldPosition = hitInfo.point;
             _hitCollider = hitInfo.collider;
-        }
+            
+            var cellPosition = _grid.WorldToCell(worldPosition);
+            var cellCenterWorld = _grid.GetCellCenterWorld(cellPosition);
         
-        var cellPosition = _grid.WorldToCell(worldPosition);
-        var cellCenterWorld = _grid.GetCellCenterWorld(cellPosition);
+            _tilePrefab.transform.position = cellCenterWorld;
         
-        _tilePrefab.transform.position = cellCenterWorld;
-        
-        TakeTileRenders();
-        DefiningObjectUnderTile();
-        Highlighting();
+            TakeTileRenders();
+            DefiningObjectUnderTile();
+            Highlighting();
 
-        if (!_isItGameField || !Input.GetMouseButtonDown(0)) return;
+            if (!_isItGameField) return;
+
+            if (!Input.GetMouseButtonDown(0)) return;
+            
+            RestoreTileBasicMaterials();
         
-        RestoreTileBasicMaterials();
-        
-        _tilePrefab.transform.position = cellCenterWorld;
-        SetLayerRecursivelyToChildren(_tilePrefab.transform, 0);
-        _tilePrefab = null;
+            _tilePrefab.transform.position = cellCenterWorld;
+            SetLayerRecursivelyToChildren(_tilePrefab.transform, 0);
+            _tilePrefab = null;
+        }
     }
 
     private void Highlighting()

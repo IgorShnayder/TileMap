@@ -256,9 +256,9 @@ MonoBehaviour:
   _grid: {fileID: 325924338}
   _highlightingMaterialPutTale: {fileID: 2100000, guid: e9b3514c4196b8e4f9edefc8e6749944, type: 2}
   _highlightingMaterialNotPutTale: {fileID: 2100000, guid: b17431c4601da9b48a07b01fed8a7b97, type: 2}
-  _spriteElements: []
   _isItGameField: 0
-  _hittedCollider: {fileID: 0}
+  _hitCollider: {fileID: 0}
+  _spriteElements: []
 --- !u!4 &73515832
 Transform:
   m_ObjectHideFlags: 0

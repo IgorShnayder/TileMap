@@ -106,6 +106,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6093491989863355560, guid: 162d2f8f57192a14ab9278fc56faf57e, type: 3}
+      propertyPath: m_Size.x
+      value: 2.4544609
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093491989863355560, guid: 162d2f8f57192a14ab9278fc56faf57e, type: 3}
+      propertyPath: m_Size.y
+      value: 1.6661749
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093491989863355560, guid: 162d2f8f57192a14ab9278fc56faf57e, type: 3}
+      propertyPath: m_Size.z
+      value: 2.4668217
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093491989863355560, guid: 162d2f8f57192a14ab9278fc56faf57e, type: 3}
+      propertyPath: m_Center.x
+      value: 0.0013768673
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093491989863355560, guid: 162d2f8f57192a14ab9278fc56faf57e, type: 3}
+      propertyPath: m_Center.y
+      value: -0.23308742
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093491989863355560, guid: 162d2f8f57192a14ab9278fc56faf57e, type: 3}
+      propertyPath: m_Center.z
+      value: 0.0018548965
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093491989863355560, guid: 162d2f8f57192a14ab9278fc56faf57e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -124,6 +152,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1216414579862036432}
     m_Modifications:
+    - target: {fileID: -3281812277924531262, guid: 3d3e1647da524af438765070d6d4fc6c, type: 3}
+      propertyPath: m_Size.x
+      value: 2.4304726
+      objectReference: {fileID: 0}
+    - target: {fileID: -3281812277924531262, guid: 3d3e1647da524af438765070d6d4fc6c, type: 3}
+      propertyPath: m_Size.z
+      value: 2.429657
+      objectReference: {fileID: 0}
+    - target: {fileID: -3281812277924531262, guid: 3d3e1647da524af438765070d6d4fc6c, type: 3}
+      propertyPath: m_Center.x
+      value: 0.0069980323
+      objectReference: {fileID: 0}
+    - target: {fileID: -3281812277924531262, guid: 3d3e1647da524af438765070d6d4fc6c, type: 3}
+      propertyPath: m_Center.z
+      value: -0.014929771
+      objectReference: {fileID: 0}
+    - target: {fileID: -3281812277924531262, guid: 3d3e1647da524af438765070d6d4fc6c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3196648517536708714, guid: 3d3e1647da524af438765070d6d4fc6c, type: 3}
       propertyPath: m_Name
       value: Tile Top 1 (1)
@@ -206,6 +254,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1216414579862036432}
     m_Modifications:
+    - target: {fileID: -4908718115742173628, guid: beddc5e4d12b6024f90228d377522ea3, type: 3}
+      propertyPath: m_Size.x
+      value: 2.186928
+      objectReference: {fileID: 0}
+    - target: {fileID: -4908718115742173628, guid: beddc5e4d12b6024f90228d377522ea3, type: 3}
+      propertyPath: m_Size.z
+      value: 2.2557425
+      objectReference: {fileID: 0}
+    - target: {fileID: -4908718115742173628, guid: beddc5e4d12b6024f90228d377522ea3, type: 3}
+      propertyPath: m_Center.x
+      value: 0.0113756955
+      objectReference: {fileID: 0}
+    - target: {fileID: -4908718115742173628, guid: beddc5e4d12b6024f90228d377522ea3, type: 3}
+      propertyPath: m_Center.y
+      value: -0.12738422
+      objectReference: {fileID: 0}
+    - target: {fileID: -4908718115742173628, guid: beddc5e4d12b6024f90228d377522ea3, type: 3}
+      propertyPath: m_Center.z
+      value: 0.0016200542
+      objectReference: {fileID: 0}
+    - target: {fileID: -4908718115742173628, guid: beddc5e4d12b6024f90228d377522ea3, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2005820378363319605, guid: beddc5e4d12b6024f90228d377522ea3, type: 3}
       propertyPath: m_RootOrder
       value: -1
