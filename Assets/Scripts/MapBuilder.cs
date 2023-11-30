@@ -20,6 +20,8 @@ public class MapBuilder : MonoBehaviour
     
     public void StartPlacingTile(GameObject tilePrefab)
     {
+        if (_currentTile != null) return;
+        
         var tileObject = Instantiate(tilePrefab, _map.transform);
         _currentTile = tileObject.GetComponent<Tile>();
     }
