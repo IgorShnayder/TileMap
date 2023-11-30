@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class MapBuilder : MonoBehaviour
@@ -10,7 +11,7 @@ public class MapBuilder : MonoBehaviour
     [SerializeField] private Map _map;
     [SerializeField] private Grid _grid;
     
-    private Tile _currentTile;
+    [SerializeField]private Tile _currentTile;
     private Camera _camera;
     
     private void Awake()
@@ -18,18 +19,26 @@ public class MapBuilder : MonoBehaviour
         _camera = Camera.main;
     }
     
-    public void StartPlacingTile(GameObject tilePrefab)
+    public void StartPlacingTile(Tile tilePrefab)
     {
-        if (_currentTile != null) return;
+        if (_currentTile != null)
+        {
+            StartCoroutine(DestroyTileCoroutine(_currentTile));
+        }
         
-        var tileObject = Instantiate(tilePrefab, _map.transform);
-        _currentTile = tileObject.GetComponent<Tile>();
+        _currentTile = Instantiate(tilePrefab, _map.transform);
     }
     
     private void Update()
     {
         if (_currentTile == null) return;
         PutTileOnMap();
+    }
+    
+    private IEnumerator<Tile> DestroyTileCoroutine(Component tile)
+    {
+        yield return null;
+        Destroy(tile.gameObject);
     }
     
     private void PutTileOnMap()

@@ -359,8 +359,8 @@ MonoBehaviour:
         m_MethodName: StartPlacingTile
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 4822957276665715105, guid: 32aa5fe9b3fd53142bd05e084fa9969d, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: -2852220241332700352, guid: 32aa5fe9b3fd53142bd05e084fa9969d, type: 3}
+          m_ObjectArgumentAssemblyTypeName: Tile, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4080,8 +4080,8 @@ MonoBehaviour:
         m_MethodName: StartPlacingTile
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 976523354156320879, guid: 9b2a02323a097d7469ec5afb3c36ea9a, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: -9134468501554774026, guid: 9b2a02323a097d7469ec5afb3c36ea9a, type: 3}
+          m_ObjectArgumentAssemblyTypeName: Tile, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
